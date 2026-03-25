@@ -6,33 +6,51 @@
 
 <style>
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 font-family: Arial, sans-serif;
 margin:0;
-background:#ffffff;
+background:#f7f9fb;
 color:#333333;
-line-height:1.6;
+line-height:1.7;
 }
 
 header{
-background:#1E3A5F;
+background:#1B3A57;
 color:white;
-padding:30px;
+padding:40px 20px;
 text-align:center;
 }
 
+header h1{
+margin:0;
+font-size:36px;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+opacity:0.95;
+}
+
 nav{
-background:#2A6F97;
+background:#2F6F95;
 padding:15px;
 text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 nav a{
 color:white;
-margin:20px;
+margin:16px;
 text-decoration:none;
 font-weight:bold;
-font-size:18px;
+font-size:17px;
 }
 
 nav a:hover{
@@ -40,13 +58,36 @@ text-decoration:underline;
 }
 
 .container{
-max-width:900px;
+max-width:1000px;
 margin:auto;
-padding:40px;
+padding:30px 20px;
+}
+
+section{
+padding:35px;
+background:#ffffff;
+margin:25px 0;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,0.06);
 }
 
 h2{
-color:#1E3A5F;
+color:#1B3A57;
+margin-top:0;
+}
+
+h3{
+color:#2F6F95;
+margin-top:28px;
+}
+
+a{
+color:#2F6F95;
+}
+
+a:hover{
+color:#1B3A57;
+text-decoration:underline;
 }
 
 footer{
@@ -54,23 +95,32 @@ background:#eeeeee;
 text-align:center;
 padding:20px;
 margin-top:40px;
+font-size:15px;
 }
 
-.profile{
-text-align:center;
-margin-top:20px;
+ul li{
+margin-bottom:12px;
 }
 
-.profile img{
-width:180px;
+.about-flex{
+display:flex;
+align-items:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.about-text{
+flex:1;
+min-width:260px;
+}
+
+.about-photo img{
+width:220px;
+height:220px;
+object-fit:cover;
 border-radius:50%;
-}
-a{
-color:#2A6F97;
-}
-
-a:hover{
-text-decoration:underline;
+border:5px solid #ffffff;
+box-shadow:0 4px 12px rgba(0,0,0,0.12);
 }
 
 </style>
@@ -103,16 +153,29 @@ text-decoration:underline;
 </div>
 
 <section id="about">
+
 <h2>About Me</h2>
 
+<div class="about-flex">
+
+<div class="about-photo">
+<img src="VCT_1558.jpg" alt="Olivia Nabawanda">
+</div>
+
+<div class="about-text">
 <p>
 I am a Lecturer in Mathematics at Mbarara University of Science and Technology (MUST), Uganda.
-My research interests include algebraic combinatorics, enumerative combinatorics, and generating functions.
+My research lies in algebraic and enumerative combinatorics, with interests in permutation statistics,
+generating functions, and related combinatorial structures.
 </p>
 
 <p>
-I am also involved in organizing scientific events, mentoring students, and mathematical outreach.
+I am also actively involved in scientific community building, student mentorship, and mathematical outreach,
+particularly through initiatives that support women and young researchers in STEM.
 </p>
+</div>
+
+</div>
 
 </section>
 <h2>Profiles</h2>
